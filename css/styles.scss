@@ -78,10 +78,11 @@ input:focus {
 .message {
 
   &__title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 700;
     text-align: center;
     color: $color-very-dark-magenta;
+    padding-top: 2.5rem;
     padding-left: 1em;
     padding-right: 1em;
     line-height: 1.2em;
@@ -164,7 +165,7 @@ input:focus {
 }
 
 footer {
-  margin-top: 2em;
+  margin-top: 1.5em;
   .attribution {
     font-size: 11px;
     text-align: center;
