@@ -1,0 +1,61 @@
+// Primary Colours
+$color-very-dark-magenta: hsl(300, 43%, 22%);
+$color-soft-pink: hsl(333, 80%, 67%);
+
+// Neutral colours
+$color-dark-grayish-magenta: hsl(303, 10%, 53%);
+$color-light-grayish-magenta: hsl(300, 24%, 96%);
+$color-white: hsl(0, 0%, 100%);
+
+// Typography
+$default-font: 'Spartan', sans-serif;
+
+// Body Copy
+$body-font-size: 0.9375em;
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $default-font;
+  font-size: $body-font-size;
+  line-height: 1.5em;
+  color: $color-dark-grayish-magenta;
+  background: $color-white;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $default-font;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  border: none;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
