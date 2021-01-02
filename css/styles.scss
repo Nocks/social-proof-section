@@ -157,6 +157,7 @@ input:focus {
   &__status {
     margin-top: 0;
     color: $color-soft-pink;
+    font-size: 0.9em;
   }
 
   &__bottom {
@@ -181,4 +182,229 @@ footer {
   .attribution span + span {
      margin-top: 0;
   }
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  .container {
+    padding: 5em;
+
+    &__top {
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: space-between;
+      align-items: center;
+    }
+
+    &__bottom {
+      flex-direction: row;
+    }
+  }
+
+  .message {
+    width: 50%;
+
+    &__title {
+      font-size: 3em;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+      width: 70%;
+    }
+
+    &__details {
+      text-align: left;
+      width: 90%;
+      margin-top: 0.8em;
+    }
+  }
+
+  .rating {
+    width: 50%;
+    margin-top: 0;
+
+    &__item {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1em 2em;
+      width: 70%;
+    }
+
+    &__title {
+      margin-top: 0;
+      font-size: 0.9em;
+    }
+
+    &__item--second {
+      margin-left: 3em;
+    }
+
+    &__item--third {
+      margin-left: 6em;
+    }
+  }
+
+  .review-card {
+    margin-top: 0;
+    margin-right: 1.5em;
+    height: 90%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--second {
+        margin-top: 1.5em;
+      }
+
+      &--third {
+        margin-top: 3em;
+      }
+  }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .container {
+    padding: 5em;
+
+    &__top {
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: space-between;
+      align-items: center;
+    }
+
+    &__bottom {
+      flex-direction: row;
+    }
+  }
+
+  .message {
+    width: 50%;
+
+    &__title {
+      font-size: 3em;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+      width: 70%;
+    }
+
+    &__details {
+      text-align: left;
+      width: 90%;
+      margin-top: 0.8em;
+    }
+  }
+
+  .rating {
+    width: 50%;
+    margin-top: 0;
+
+    &__item {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1em 2em;
+      width: 70%;
+    }
+
+    &__title {
+      margin-top: 0;
+      font-size: 0.9em;
+    }
+
+    &__item--second {
+      margin-left: 3em;
+    }
+
+    &__item--third {
+      margin-left: 6em;
+    }
+  }
+
+  .review-card {
+    margin-top: 0;
+    margin-right: 1.5em;
+    height: 90%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--second {
+        margin-top: 1.5em;
+      }
+
+      &--third {
+        margin-top: 3em;
+      }
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .message {
+
+    &__title {
+      font-size: 4em;
+    }
+  }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .message {
+
+    &__title {
+      font-size: 2.5em;
+    }
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
 }
