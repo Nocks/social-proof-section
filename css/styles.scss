@@ -171,8 +171,15 @@ footer {
     font-size: 11px;
     text-align: center;
   }
+  .attribution,
   .attribution a {
     color: $color-very-dark-magenta;
+  }
+
+  .attribution a:hover,
+  .attribution a:focus,
+  .attribution a:active {
+    color: #e85461;
   }
 
   .attribution span {

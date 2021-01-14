@@ -141,8 +141,14 @@ footer .attribution {
   font-size: 11px;
   text-align: center;
 }
+footer .attribution,
 footer .attribution a {
   color: #502050;
+}
+footer .attribution a:hover,
+footer .attribution a:focus,
+footer .attribution a:active {
+  color: #e85461;
 }
 footer .attribution span {
   display: block;
